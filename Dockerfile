@@ -4,6 +4,7 @@ MAINTAINER avinash.s@yukthi.com
 RUN dnf -y install pdns-recursor
 RUN dnf -y install lua-ldap
 RUN dnf -y install lua-sql-sqlite
+RUN dnf -y install openldap-clients
 
 EXPOSE 53/udp
 
