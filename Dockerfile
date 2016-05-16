@@ -10,5 +10,5 @@ EXPOSE 53/udp
 CMD ["pdns_recursor", "--loglevel=5",                                 \
                       "--daemon=no",                                  \
                       "--local-address=0.0.0.0",                      \
-                      "--forward-zones-recurse=.=8.8.8.8,8.8.4.4"     \
+                      "--forward-zones-recurse=.=8.8.8.8,8.8.4.4",    \
                       "--lua-dns-script=/totaloffice/lua/recursor.lua"]
