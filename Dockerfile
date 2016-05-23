@@ -1,9 +1,11 @@
-FROM fedora:23
+FROM centos
 MAINTAINER avinash.s@yukthi.com
 
-RUN dnf -y install pdns-recursor
-RUN dnf -y install openldap-clients
-RUN dnf -y install lua-ldap lua-sql-sqlite
+RUN yum -y install epel-release
+RUN yum -y install pdns-recursor
+RUN yum -y install openldap-clients
+RUN yum -y install lua-ldap
+RUN yum -y install lua-dbi
 
 EXPOSE 53/udp
 
