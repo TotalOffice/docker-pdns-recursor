@@ -1,4 +1,4 @@
-FROM fedora
+FROM fedora:23
 MAINTAINER avinash.s@yukthi.com
 
 RUN dnf -y install pdns-recursor
